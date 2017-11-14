@@ -1,0 +1,169 @@
+/*
+*  -----------------------------------------------
+*  config/VARIABLES and MIXINS
+*
+*      1. Colors
+*      2. Paths
+*      3. Spacing/dimensions
+*      4. JS Media queries
+*      5. Fonts/mixins
+*      6. OOCSS helpers
+*      7. CSS3 transitions
+*  -----------------------------------------------
+*/
+
+
+/*
+ * 1. Colors
+ ****************************************************************/
+$white:     #fff;
+$black:     #000;
+
+$grey1:     #f7f7f7;
+$grey2:     #ebf0f1;
+$grey3:     #d6d6d6;
+$blue1:     #bde7ff;
+$blue2:     #dcf2fb;
+$green1:    #cff1ce;
+$green2:    #eaf9d2;
+$yellow1:   #fffccc;
+$yellow2:   #f8f9b5;
+$red1:      #ffdbcc;
+$red2:      #fffdc6;
+$red3:      #ddeeee;
+$red4:      #e7ebd1;
+
+$grey-medium: #666;
+
+
+$red-button: #a20024;
+$red-button-hover: #920020;
+$blue-button: #0074a2;
+$blue-button-hover: #00648c;
+$wordpress-default-hover: #00a0d2;
+
+/*
+ * 2. Paths
+ ****************************************************************/
+
+//$imgPath: '/assets/img';
+
+
+/*
+ * 3. Spacing/dimensions
+ ****************************************************************/
+$spacing: 20px;
+$spacing-big: 50px;
+$default-padding: 10px;
+
+
+/*
+ * 4. JS Media queries
+ ****************************************************************/
+
+/**
+ * These values will not show up in content, but can be 
+ * queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+// body:before {
+//     content: "desktop";
+//     display: none; /* Prevent from displaying. */
+
+//     // @media (max-width: $screen-lg-min) {
+//     //     content: "large";
+//     // }
+//     @media (max-width: $screen-md-min) {
+//         content: "tablet";
+//     }
+//     @media (max-width: $screen-xs-min) {
+//         content: "mobile";
+//     }
+// }
+
+
+/*
+ * 5. Fonts/mixins
+ ****************************************************************/
+// $fontIcons: 'icons';
+// $fontDroid: 'Droid sans';
+// $fontArial: 'arial, sans-serif';
+
+// /* Mixins */
+// @mixin icon($character, $size, $lineHeight, $display: inline-block) {
+//     content: $character;
+//     display: $display;
+//     @include font(icon, $size, $lineHeight);
+// }
+
+// @mixin font($family, $size, $lineHeight) {
+    
+//     $weight: 400;
+    
+//     @if $family == 'icon' {
+//         $font: $fontIcons;
+//     } @else if $family == 'arial' {
+//         $font: $fontArial
+//     } @else if $family == 'droid' {
+//         $font: $fontDroid
+//     } @else if $family == 'droid-bold' {
+//         $font: $fontDroid;
+//         $weight: 700;
+//     }
+    
+//     font: $weight #{$size}/#{$lineHeight} $font;
+// }
+
+
+/*
+ * 6. OOCSS helpers
+ ****************************************************************/
+
+/* Vertical centering classes */
+.va,
+.vac {
+    display: inline-block;
+    vertical-align: middle;
+}
+.va {
+    height: 100%;
+    width: 0;
+    &.bottom { vertical-align: bottom; }
+}
+
+
+/*
+ * 7. CSS3 transitions
+ ****************************************************************/
+
+$easeInCubic:        cubic-bezier(0.550, 0.055, 0.675, 0.190);
+$easeOutCubic:       cubic-bezier(.215,.61,.355,1);
+$easeInOutCubic:     cubic-bezier(.645,.045,.355,1);
+
+$easeInCirc:         cubic-bezier(.6,.04,.98,.335);
+$easeOutCirc:        cubic-bezier(.075,.82,.165,1);
+$easeInOutCirc:      cubic-bezier(.785,.135,.15,.86);
+
+$easeInExpo:         cubic-bezier(.95,.05,.795,.035);
+$easeOutExpo:        cubic-bezier(.19,1,.22,1);
+$easeInOutExpo:      cubic-bezier(1,0,0,1);
+
+$easeInQuad:         cubic-bezier(.55,.085,.68,.53);
+$easeOutQuad:        cubic-bezier(.25,.46,.45,.94);
+$easeInOutQuad:      cubic-bezier(.455,.03,.515,.955);
+
+$easeInQuart:        cubic-bezier(.895,.03,.685,.22);
+$easeOutQuart:       cubic-bezier(.165,.84,.44,1);
+$easeInOutQuart:     cubic-bezier(.77,0,.175,1);
+
+$easeInQuint:        cubic-bezier(.755,.05,.855,.06);
+$easeOutQuint:       cubic-bezier(.23,1,.32,1);
+$easeInOutQuint:     cubic-bezier(.86,0,.07,1);
+
+$easeInSine:         cubic-bezier(.47,0,.745,.715);
+$easeOutSine:        cubic-bezier(.39,.575,.565,1);
+$easeInOutSine:      cubic-bezier(.445,.05,.55,.95);
+
+$easeInBack:         cubic-bezier(.6,-.28,.735,.045);
+$easeOutBack:        cubic-bezier(.175, .885,.32,1.275);
+$easeInOutBack:      cubic-bezier(.68,-.55,.265,1.55);

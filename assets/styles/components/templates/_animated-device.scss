@@ -1,0 +1,29 @@
+///////////// ANIMATED DEVICE \\\\\\\\\\\\\\\
+.animated-device {
+	display: table;
+	width: 100%;
+	overflow: hidden;
+	min-height: 350px;
+	position: relative;
+	padding-bottom: 90px;
+
+	img {
+		width: 300px;
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+		bottom: -330px;
+	}
+
+	.col-sm-6 {
+		display: table-cell;
+		vertical-align: middle;
+		//float: none;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		img {
+			display: none;
+		}
+	}
+}

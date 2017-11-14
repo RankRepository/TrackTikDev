@@ -1,0 +1,41 @@
+// POLICY & TERMS
+
+.template-content-text {
+    .article {
+        text-align: left;
+
+        h1,
+        .title {
+            max-width: none;
+            margin: 0 0 30px 0;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        ol li {
+            &,
+            ul li {list-style-type: none;}
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        ul ul li {list-style-type: none;}
+    }
+}

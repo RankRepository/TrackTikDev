@@ -1,0 +1,28 @@
+///////////// 1col txt \\\\\\\\\\\\\\\
+.one-col-txt {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+
+	h2 {
+		margin-bottom: 30px;
+	}
+	
+	img {
+		margin-bottom: 50px;
+	}
+
+	p, ul, ol, .btn {
+		margin-bottom: 50px;
+	}
+
+	ul, ol {
+		text-align: left;
+	}
+
+	img {
+		width: 100%;
+	}
+}

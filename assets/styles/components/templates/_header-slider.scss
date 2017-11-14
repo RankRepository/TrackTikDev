@@ -1,0 +1,78 @@
+///////////// ANIMATED DEVICE \\\\\\\\\\\\\\\
+.header-slider {    
+    
+    .title {
+        text-transform: uppercase;
+        font-weight: 700!important;
+        font-size: 3rem;
+    }
+
+    .innerCenter {
+        max-width: inherit;
+        width: 80%;
+    }
+
+    // CAROUSEL
+    #header-slider {
+        height:100%;
+
+        .carousel-inner {
+            height:100%;
+        }
+
+        .item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 530px;
+            min-height: 530px;
+            width: 100%;
+        }
+
+        .item-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carousel-control {
+            background: none;
+            width: 40px;
+            z-index: 9;
+        }
+
+        .arrow-prev,
+        .arrow-next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            height: 40px;
+        }
+
+        .arrow-prev {
+            transform: rotate(180deg);
+            left: 0px;
+        }
+
+        .arrow-next {
+            right: 0px;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        #header-slider {
+            .item {
+                height: auto;
+            }
+            .carousel-control {
+                margin: 0px 5px;
+                width: 25px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    
+}

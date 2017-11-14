@@ -1,0 +1,142 @@
+///////////// HOME V2 - 4col icons list \\\\\\\\\\\\\\\
+
+.icons-list {
+    border-top: 1px solid #ddd;
+
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 120px;
+        text-align: center;
+    }
+
+    p, ol, ul, .btn {
+        margin-bottom: 50px;
+    }
+
+    ul li:last-child, ol li:last-child {
+        margin-bottom: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: 70px;
+        padding: 0;
+
+        li {
+            margin-bottom: 100px;
+
+            &:last-child {
+                color: $red;
+            }
+
+            .item-box {
+                display: inline-block;
+                width: 100%;
+                background-color: $white;
+                border: 1px solid #d1d1d3;
+                padding: 20px;
+                min-height: 220px;
+
+                transition: transform 0.2s;
+                backface-visibility: hidden;
+                transform: translateZ(0);
+                
+            }
+
+            .image {
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                display: block;
+                margin: -70px auto 20px;
+                background-color: $white;
+                border-radius: 50%;
+                padding: 20px;
+                border: 1px solid #d1d1d3;
+            }
+
+            img {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+
+                backface-visibility: hidden;
+                transform: translateZ(0);
+            }
+
+            .title,
+            .text {
+                display: block;
+                margin-bottom: 10px;
+                color: $ocean;
+
+                -webkit-font-smoothing: antialiased;
+                transform: translateZ(0);
+            }
+
+            .title {
+                font-size: 1.6rem;
+                //font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .text {
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                &, a {color: $ocean;}
+
+                .item-box {
+                    transform: scale(1.1);
+                }
+            }
+
+            &:focus, a:focus {
+                &, span {
+                    color: $ocean;
+                    text-decoration: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $screen-md-max) {
+        ul li {
+            .item-box {min-height: 240px;}
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        h2 {
+            margin-bottom: 90px;
+            font-size: 2.2rem;
+        }
+
+        ul li {
+            font-size: 1.4rem;
+
+            .item-box {padding: 10px 15px;}
+        }
+    }
+
+    @media (max-width: 480px) {
+        ul li {
+            width: 100%;
+            margin-bottom: 80px;
+
+            .item-box {
+                padding: 10px 15px 15px 15px;
+                min-height: 10px;
+            }
+
+            &:hover {
+                .item-box {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

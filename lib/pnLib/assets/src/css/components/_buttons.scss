@@ -1,0 +1,43 @@
+/**
+ *    -----------------------------------------------
+ *    component/BUTTONS
+ *
+ *    1. Generic
+ *    2. Header
+ *
+ *    -----------------------------------------------
+ */
+
+    /*
+     * 1. Generic
+     ****************************************************************/
+    .upload-and-attach-link ,
+    .upload-and-attach-link-oneImage,
+    .upload-and-attach-link-multiPDF,
+    .btnPnLib {
+        display: inline-block;
+        background-color: $blue-button;
+        color: #f0f0f0;
+        cursor: pointer;
+        margin: 3px;
+        padding: 5px 13px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $blue-button-hover;
+        }
+    }
+
+    .bg-red {
+        background-color: $red-button;
+
+        &:hover {
+            background-color: $red-button-hover;
+        }
+    }
+    .pdfList .delete {
+        color: red;
+        cursor: pointer;
+        font-weight: bold;
+    }

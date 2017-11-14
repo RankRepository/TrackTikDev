@@ -1,0 +1,170 @@
+/*
+*  -----------------------------------------------
+*   GLOBAL STYLES
+*
+*      1. Generic
+*      2. Buttons
+*      3. Group field
+*      4. Tables modifiers
+*  -----------------------------------------------
+*/
+
+
+/*
+ * 1. Generic
+ ****************************************************************/
+
+.tableMeta,
+.group-row {
+    border-collapse: collapse;
+}
+
+
+.tableMeta {
+    td,
+    th {
+        border: 2px solid $white;
+    }
+
+    td {
+        padding: $default-padding $default-padding;
+    }
+
+    tr td:first-child {
+        font-weight: bold;
+    }
+}
+
+
+tr.weekTime label {
+    width: 100px;
+    display: inline-block;
+}
+
+.custom-header {
+    text-align: center;
+    padding: 3px;
+    background: #000;
+    color: $white;
+}
+
+.tabContenu {
+    display: none;
+    padding: 30px;
+}
+
+.tabContainer {
+    background-color: #E8E1CE;
+    border-radius: 15px;
+}
+
+.tabContent {
+    border: 2px solid black;
+    background-color: #DBD3BF;
+    border-top: none;
+}
+
+.tabHeader span {
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+
+    &:hover {
+        color: #999;
+        border-bottom: 2px solid black;
+    }
+
+    &.active {
+        color: #555;
+        border-bottom: 2px solid #C41230;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+#menucategorie-all {
+    max-height: 500px;
+}
+
+.galerieImagesVariations img {
+    max-width: 90px;
+    height: auto;
+}
+
+
+// Titles
+.pn-subtitle {
+    background: $grey3;
+    td {
+        margin-bottom: 0;
+        padding: $default-padding * 1.5 $default-padding;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 17px;
+        line-height: 1.1em;
+        margin: 0;
+    }
+}
+
+
+/*
+ * 4. Tables modifiers
+ ****************************************************************/
+.gris1 { background-color: $grey1; }
+
+.gris2 { background-color: $grey2; }
+
+.gris3 { background-color: $grey3; }
+
+.bleu1 { background-color: $blue1; }
+
+.bleu2 { background-color: $blue2; }
+
+.vert1 { background-color: $green1; }
+
+.vert2 { background-color: $green2; }
+
+.jaune1 { background-color: $yellow1; }
+
+.jaune2 { background-color: $yellow2; }
+
+.rouge1 { background-color: $red1; }
+
+.rouge2 { background-color: $red2; }
+
+.rouge3 { background-color: $red3; }
+
+.rouge4 { background-color: $red4; }
+
+.white { background-color: #fff; }
+
+
+.bottom-spacing {
+    > td,
+    > th {
+        border-bottom: $spacing solid transparent;
+    }
+}
+
+.top-spacing {
+    > td,
+    > th {
+        border-top: $spacing solid transparent;
+    }
+}
+
+.bottom-spacing-big {
+    > td,
+    > th {
+        border-bottom: $spacing-big solid transparent;
+    }
+}
+
+.top-spacing-big {
+    > td,
+    > th {
+        border-top: $spacing-big solid transparent;
+    }
+}

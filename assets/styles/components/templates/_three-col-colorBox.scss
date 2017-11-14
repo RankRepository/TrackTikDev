@@ -1,0 +1,81 @@
+///////////// 3 col icon \\\\\\\\\\\\\\\
+.three-col-colorBox {
+	text-align: center;
+
+	img {
+		width: 140px;
+		height: 140px;
+		margin-bottom: 20px;
+	}
+
+	.title {
+		font-size: 1.6rem;
+		line-height: 1.2em;
+		color: $ocean;
+		font-weight: 500 !important;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+
+		&::after {
+			display: block;
+		    content: '';
+		    height: 6px;
+		    width: 30px;
+		    background-color: #eb3c42;
+		    margin: 20px auto 0;
+		}
+	}
+
+	.inner {
+		//background-color: #20a8a6;
+		background-color: $white;
+		padding: 40px 30px;
+		border: 1px solid $ocean;
+		// height: 420px;
+	}
+
+	.desc {
+		font-size: 1.4rem;
+		font-weight: 300;
+		margin-bottom: 10px;
+		color: $ocean;
+		// text-align: left;
+	}
+	
+
+	@media (max-width: $screen-xs-max) {
+		.box {
+			margin: 10px 0 20px;
+		}
+
+		img {
+			margin-bottom: 20px;
+		}
+
+		// p.title {
+		// 	font-size: 2rem;
+		// }
+		p.desc {
+			font-size: 1.4rem;
+		}
+
+		.inner {
+			height: auto;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  //       p.title {
+		// 	font-size: 2rem;
+		// }
+		p.desc {
+			font-size: 1.4rem;
+		}
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        .inner {
+        	// height: 430px;
+        }
+    }
+}

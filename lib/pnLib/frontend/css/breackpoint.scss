@@ -1,0 +1,18 @@
+/**
+ * These values will not show up in content, but can be 
+ * queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+
+body:before {
+    content: "desktop";
+    display: none; /* Prevent from displaying. */
+
+    @media (max-width: $screen-lg-min) {
+        content: "tablet";
+    }
+
+    @media (max-width: $screen-xs-max) {
+        content: "mobile";
+    }
+}

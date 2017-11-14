@@ -1,0 +1,30 @@
+.chart-text {
+
+    #tracktikChart {
+        height: auto !important;
+        max-width: 100%;
+        width: 100% !important;
+    }
+
+    .btn {margin-bottom: 10px;}
+
+    @media (max-width: $screen-sm-max) {
+        .chart {
+            margin-bottom: 40px;
+            padding: 0 40px;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .chart {
+            padding: 0 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .chart {
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+}

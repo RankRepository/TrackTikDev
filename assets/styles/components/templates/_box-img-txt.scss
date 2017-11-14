@@ -1,0 +1,96 @@
+////////////////// BOX IMG TXT \\\\\\\\\\\\\\\\\\
+.box-img-txt {
+	display: table;
+	width: 100%;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	.box {
+		// min-height: 400px;
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+
+	img {
+		width: 100%;
+		// max-width: 400px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	h2 {
+		margin-bottom: 30px;
+	}
+	
+	p, ul, ol, .btn {
+		margin-bottom: 50px;
+	}
+
+	ul, ol {
+		text-align: left;
+	}
+
+	&.imgToBottom {
+		padding-bottom: 0;
+
+		.content-img {
+			position: absolute;
+			bottom: 0px;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		display: block;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.box {
+			float: left;
+			display: block;
+		}
+
+		.box:first-child {
+			margin-bottom: 30px;
+		}
+
+		&.imgToBottom {
+			.content-img {
+				position: relative;
+				max-width: 400px;
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+		.box {
+			float: left;
+			display: block;
+		}
+
+		&.imgToBottom {
+			.content-img {
+				position: relative;
+				max-width: 400px;
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		&.imgToBottom {
+			.content-img {
+				//width: 460px;
+			}
+		}
+	}
+
+	@media (min-width: $screen-lg-min) {
+		&.imgToBottom {
+			.content-img {
+				//width: 460px;
+			}
+		}
+	}
+}

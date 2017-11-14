@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-08-26, 12:14:17
+    Author     : poudrenoire
+*/
+
+.pn-icon{
+    color:#20a8a6 !important;
+}
+
+.pn-icon + small,
+.pn-icon + h3 {
+    color:#20a8a6 !important;
+}
+
+.so-widget-icon-features {
+	background: none!important;
+}

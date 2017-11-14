@@ -1,0 +1,63 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+
+.modal-form{
+    p{
+        margin:0px;
+    }
+    iframe{
+        min-height: 840px;
+    }
+    .modal-header{
+         background-color: #fafafa;        
+    }
+    .modal-content{
+         background-color: #f6f6f6;
+    }
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.pardotform{
+    min-height:850px;
+}
+
+
+.txt-notification-empty-field, .txt-notification-cv-sent, .txt-notification-cv-badtype, .txt-notification-cv-sending{
+  display: none;
+}
+
+.data-required{
+  border-color: red !important;
+}

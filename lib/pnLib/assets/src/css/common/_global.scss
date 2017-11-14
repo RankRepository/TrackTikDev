@@ -1,0 +1,77 @@
+/**
+ *  -----------------------------------------------
+ *  shared/GLOBAL
+ *
+ *  1. Base
+ *  2. Headings
+ *  3. Text
+ *  4. Links/buttons
+ *  5. Custom fixes
+ *  6. Accessibility
+ *  -----------------------------------------------
+ */
+
+
+    /*
+     * 1. Base
+     ****************************************************************/
+
+    *, *:before, *:after { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+    body {
+        min-height: 100%;
+    }
+
+
+    /*
+    * 2. Headings
+    ****************************************************************/
+
+
+
+    /*
+    * 3. Text
+    ****************************************************************/
+
+    // p { margin-bottom: $globalMarginBottom; }
+    
+    
+    img {
+        //display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    /*
+    * 4. Links/buttons
+    ****************************************************************/
+
+    a {
+
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: 0;
+        padding: 0;
+    }
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+
+    /*
+    * 5. Custom fixes
+    ****************************************************************/
+
+    // ios reset
+    input, textarea {
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+    ::-ms-clear { display: none; } // Prevents "x" to clear field in explorer 11+
+

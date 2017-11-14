@@ -1,0 +1,25 @@
+///////////// 3 col icon \\\\\\\\\\\\\\\
+.three-col-icon {
+	text-align: center;
+
+	img {
+		width: 70px;
+		height: 70px;
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.box {
+			margin: 10px 0 20px;
+		}
+
+		img {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.partners {
+	text-align: center;
+	position: relative;
+
+	ul {
+		list-style-type: none;
+		margin: 30px 0 0 0;
+		padding: 0;
+		width: 100%;
+
+		li {
+			margin: 0 20px 30px;
+			display: inline-block;
+
+			img {
+				width: 150px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		ul li {
+			margin: 0 20px 20px;
+		}
+	}
+}

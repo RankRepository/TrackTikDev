@@ -1,0 +1,336 @@
+.footer {
+    color: white;
+
+
+
+    .footer-clients,
+    .footer-nav,
+    .footer-copyright {
+        padding: 60px;
+        width: 100%;
+    }
+
+
+    .footer-clients {
+        //background-image: url('../../assets/images/footer-building.jpg');
+        background-color: $white;
+        padding: 90px 0;
+
+        .col-logo {
+            text-align: center;
+
+            img {
+                display: inline-block;
+            }
+        }
+    }
+    
+    .footer-clients , .blockquotes{
+        overflow: hidden;
+        position: relative;
+
+
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0px 0 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $ocean;
+        }
+
+        .owl-carousel , .owl-caroussel-quotes{
+
+            img {
+                width: 100%;
+                max-width: 150px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .owl-wrapper-outer {
+                z-index: 2;
+            }
+        }
+    
+        .owl-theme .owl-controls {
+            position: absolute;
+            //top: 34px;
+            width: 100%;
+
+            top: 50%;
+            margin-top: -30px;
+            left: 0;
+
+            .owl-buttons div {
+                color: #000;
+                display: inline-block;
+                zoom: 1;
+                margin: 5px;
+                padding: 3px 10px;
+                font-size: 30px;
+                border-radius: 30px;
+                background: none;
+                filter: Alpha(Opacity=1);
+                opacity: 1;
+
+                &.owl-prev {
+                    float: left;
+                    margin-left: 30px;
+                }
+
+                &.owl-next {
+                    float: right;
+                    margin-right: 30px;
+                }
+            }
+
+            .owl-page span {
+                background: #fff;
+            }
+        }
+    }
+    
+    .footer-nav {
+        background: $ocean;
+        overflow: hidden;
+        padding: 60px;
+        font-size: 16px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .col {
+            width: 25%;
+            float: left;
+            padding: 0 15px;
+        }
+
+        .footer-title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        nav {
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            a {
+                display: block;
+                color: white;
+                font-size: 1.6rem;
+            }
+        }
+
+        .footer-btn {
+            padding: 10px 20px;
+            border: 2px solid white;
+            display: inline-block;
+        }
+
+        .share-list {
+            padding: 0;
+            margin: 10px 0 30px;
+            list-style-type: none;
+            overflow: hidden;
+            
+            li {
+                float: left;
+                margin-right: 10px;
+
+                a {
+                    font-size: 20px;
+                }
+
+                .icon-youtube {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        background: #0c132e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        p, a {
+            color: white;
+            font-size: 14px;
+            margin: 0;
+            text-decoration: none;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        
+        .blockquotes {
+            display: block;
+
+            .title {
+                font-size: 2.2rem;
+            }
+
+            .owl-carousel-quotes {
+                padding: 40px 20px;
+            }
+
+            .quote {
+                width: 90%;
+            }
+
+            h2 {
+                padding: 0 15px;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p{
+                font-size: 1.4rem;
+            }
+
+            .box {
+                margin-top: 50px;
+            }
+
+            .author {
+                font-size: 1rem;
+            }
+
+            .owl-theme .owl-controls .owl-buttons div {
+                position: relative;
+                z-index: 10;
+
+                &.owl-prev {margin-left: 0;}
+                &.owl-next {margin-right: 0;}
+            }
+            
+            .col-sm-4 {
+                float: left;
+                display: block;
+            }
+        }
+
+        .footer-clients {
+            padding: 40px 0;
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .owl-carousel img {
+                max-width: 110px;
+            }
+
+            .owl-theme .owl-controls {
+                top: 16px;
+            }
+        }
+
+        .footer-nav {
+            padding: 20px 15px;
+            font-size: 1.2rem;
+
+            nav a {
+                font-size: 1.2rem;
+            }
+
+            .footer-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .row {
+                display: table;
+            }
+
+            .col {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                float: none;
+            }
+        }
+
+        .footer-copyright {
+            .left, .right {
+                text-align: center;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        .footer-nav {
+            .footer-title {
+                font-size: 19px;
+            }
+
+            nav a,
+            .footer-btn,
+            address {
+                font-size: 12px;
+            }
+        }
+
+        .blockquotes {
+            h3 {
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+            .author {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        .footer-nav {
+            .footer-title {
+                font-size: 19px;
+            }
+
+            nav a,
+            .footer-btn,
+            address {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-nav {
+            .col {
+                width: 100%;
+                margin-top: 20px;
+
+                address {
+                    margin-bottom: 0;
+                    font-size: 1.4rem;
+                }
+            }
+
+            nav a {font-size: 1.4rem;}
+        }
+    }
+}

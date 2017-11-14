@@ -1,0 +1,201 @@
+/**
+ *    -----------------------------------------------
+ *    component/Group field
+ *
+ *    1. Wrapper
+ *    2. Item
+ *    3. Toggle open / close state
+ *    4. Toggle / remove buttons
+ *    5. Add item buttons
+ *
+ *    -----------------------------------------------
+ */
+
+
+/*
+* 1. Wrapper
+****************************************************************/
+
+table .group-row th {
+    width: inherit !important;
+}
+
+.pn-group-container {
+    padding: 5px 0;
+}
+
+/*
+* 2. Item
+****************************************************************/
+
+// Table
+.group-item {
+    margin-bottom: 15px;
+    width: 100%;
+
+    td {
+        padding: 5px 10px;
+    }
+
+    &.is-child {
+        margin-bottom: 15px;
+    }
+
+    &.is-closed {
+        margin-bottom: 5px;
+    }
+}
+
+// Header
+.group-header {
+    background: #505050;
+    color: $white;
+
+    .glyphicon-sort {
+        cursor: move;
+        margin-right: 15px;
+        top: auto;
+        vertical-align: middle;
+    }
+
+    &.is-child {
+        background: #B7B7B7;
+    }
+
+    > td {
+        border-bottom: 0;
+        position: relative;
+        padding: 10px;
+    }
+}
+
+.header-item-title {
+    font-style: italic;
+
+    &:not(:empty) {
+        &:before {
+            content: '';
+            border-left: 1px solid #fff;
+            display: inline-block;
+            height: 100%;
+            margin-left: 10px;
+            padding-right: 10px;
+            vertical-align: middle;
+        }
+    }
+}
+
+// Content
+.group-content {
+    background: $grey1;
+    width: 100%;
+
+    &.is-child {
+        background: $white;
+
+        td {
+            border-color: $grey1;
+        }
+    }
+}
+
+/*
+* 3. Toggle open / close state
+****************************************************************/
+
+// Tr
+.group-toggle-row {
+    > td {
+        border: 0;
+        padding: 0;
+    }
+}
+
+// Div
+.group-toggle-wrap {
+    margin-left: -1px;
+    margin-right: -1px;
+
+    &.is-closed {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+
+/*
+* 4. Toggle / remove buttons
+****************************************************************/
+
+.group-btn-wrap {
+    bottom: 0;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.group-header-btn {
+    font-size: 16px;
+    line-height: 40px;          // header height
+    margin-left: 5px;
+    top: 0;                     // override bootstrap
+    transition: color 0.2s, transform 0.4s;
+
+    &.btn-remove {
+        font-size: 14px;
+
+        &:hover {
+            color: $red-button;
+        }
+    }
+
+    &.btn-minus {
+        &.is-closed { @extend .glyphicon-menu-down; }
+
+        &:hover {
+            color: #048C00;
+        }
+    }
+}
+
+/*
+* 5. Add and toggle all buttons rown
+****************************************************************/
+$group-btn-margin: $grid-gutter-width / 2;
+
+.group-btns {
+    padding: 5px 0;
+
+    &.is-child {
+        padding: $grid-gutter-width / 2 0;
+    }
+}
+
+.group-btn {
+    box-sizing: border-box;
+    color: $grey-medium;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 0 $group-btn-margin;
+    text-align: center;
+    transition: color 0.4s;
+
+    .text,
+    .glyphicon {
+        display: inline-block;
+        line-height: 16px;
+        vertical-align: middle;
+    }
+    
+
+    .glyphicon {
+        font-size: 16px;
+        margin-right: 5px;
+        top: auto;
+    }
+
+    &:hover {
+        color: $wordpress-default-hover;
+    }
+    
+}

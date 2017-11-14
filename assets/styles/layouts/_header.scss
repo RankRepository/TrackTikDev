@@ -1,0 +1,571 @@
+// *********************
+// TEMP IMAGE
+// *********************
+
+.temp-img {
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    .current-menu-item, .current-menu-ancestor {
+       > a{ color: $red!important;}
+    }
+
+    .header-contact,
+    .header-main {
+        padding: 0 60px;
+    }
+
+    .header-contact {
+        background: $ocean;
+        height: 40px;
+        text-align: right;
+        transition: all 0.2s;
+
+        a {
+            color: white;
+            font-size: 11px;
+            line-height: 40px;
+            margin: 0 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        a.lang {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+
+    .header-main {
+        background-color: #fff;
+        margin: 0px 0 0px 0;
+        padding-top: 15px;
+        padding-bottom: 0px;
+        transition: all 0.2s;
+
+        .header-logo {
+            width: 200px;
+            margin-top: 11px;
+        }
+
+        nav {
+            float: right;
+            position: relative;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                display: table;
+            }
+
+            li {
+                // float: left;
+                // position:relative;
+                display: table-cell;
+                padding-bottom: 11px;
+                
+                &.white-border{
+                    margin-right: 0px;
+                    border-bottom: 4px solid #fff;
+
+                    &:hover {
+                        border-bottom: 4px solid #fff;
+                    }
+
+                    a {
+                       border: 4px solid $red;
+                       color: $red;
+                       background-color: #fff;
+                       padding: 10px; 
+                       text-transform: uppercase;
+                       transition: 0.4s all ease-in-out;
+                       letter-spacing: 0;
+
+                       &:hover {
+                        background-color: $red;
+                        color: #fff;
+                        // cursor: pointer;
+                       }
+                    }
+                }
+            }
+
+            > div > ul {
+                > li {
+                    border-bottom: 4px solid #fff;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        border-bottom: 4px solid $red;
+                    }
+                }
+
+                // hover rouge pour les items de la top bar
+                > li.noHover {
+                    &:hover > a {
+                        opacity: 1;
+                        cursor: default;
+                        color: $red;
+                    }
+
+                    // > a, > a:hover {
+                    //     opacity: 1;
+                    //     cursor: default;
+                    //     color: $red;
+                    // }
+                }
+            }
+
+            li.noHover {
+                &:hover {
+                    opacity: 1;
+                    cursor: default;
+                    color: $ocean;
+                }
+
+                > a, > a:hover {
+                    opacity: 1;
+                    cursor: default;
+                    color: $ocean;
+                }
+            }
+
+            a {
+                color: $ocean;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                padding: 10px;
+                text-decoration: none;
+                display: inline-block;
+                transition: 0.4s color ease-in-out;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+
+            ////////// fleche menu (open close)
+            
+            > div > ul > li.menu-item-has-children a::after {
+                font-family: 'icomoon';
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                content: "\e900";
+                position: relative;
+                top: 1px;
+                font-size: 1.2rem;
+                margin-left: 5px;
+                transition: opacity 0.4s ease-in-out, content 0.8s ease-in-out;
+            }
+
+           
+
+            div > ul > li:last-child a {
+                &:after {
+                    display: none;
+                }
+            }
+
+
+            > ul li.active-item a::after {
+                opacity: 1;
+                content: "\e902";
+            }
+            ////////fin fleche menu (open close)
+
+            > div > ul > li.menu-item-has-children > .sub-menu {
+                border: 1px solid #EFEFEF;
+            }
+
+            .sub-menu {
+                background: $white2;
+                position: absolute;
+                top: 100%;
+                color: #fff;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                visibility: hidden;
+                opacity: 0;                
+                margin-top:30px;
+                
+                // on enleve les bgcolor des enfants
+                * {
+                    background: transparent;
+                }
+
+                // menu après plug back end
+                display: block;
+
+                li {
+                    display: block;
+                    padding-bottom: 0;
+
+                    // &:nth-child(even) {
+                    //     background-color: $white2;
+                    // }
+
+                    a {
+                        padding: 10px 20px;
+                    }
+                }
+                
+                
+                &.big-menu-open {
+                    max-height: 999px;
+                }
+
+                .col50 {
+                    width: 50%;
+                    float: none;
+                    display: table-cell;
+                }
+
+                .menu-big-title{
+                    > a{
+                        padding-top: 30px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        text-align: left;
+                        font-size: 1.7rem;        
+                        display:block;
+                        border-bottom: 2px solid $ocean;
+                        padding: 30px 20px 0px 0px;
+                    }                    
+                }
+                
+                .menu-medium-title{
+                    > a{
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        margin-top: 10px;
+                        margin-bottom: 0px;
+                        display: inline-block;
+                    }                    
+                }   
+
+                .col50.menu-big-title {
+                    padding: 0 20px 10px;
+                    
+                    .sub-menu {
+                        a {
+                            padding: 10px 20px 0px 0px;
+                        }
+
+                        ul li a {
+                            padding-bottom: 10px;
+                        }
+                    }
+                    
+                }             
+                
+                
+                .col100 {
+                    width: 100%;
+                }
+
+                // fleche cachésous menu
+                a::after {
+                    display: none;
+                }
+                
+                li{
+                    float:none;
+                }
+                
+                // plus haut niveau
+                > ul {
+                    width: 100%;
+                    overflow: auto;
+                    display: table;
+
+
+
+                    // premiere grande categorie
+                    > li {
+                        &:nth-child(2){
+                            // background-color: $white2;
+                        }
+
+                        > p {
+                            padding-top: 30px;
+                            text-transform: uppercase;
+                            text-decoration: underline;
+                            font-weight: 600;
+                            text-align: center;
+                            font-size: 1.7rem;
+                        }
+                        
+                        // sous niveau va contenir les deux colonnes
+                        > ul {
+                            width: 100%;
+                            overflow: auto;
+                            padding: 30px;
+
+                            > li {
+
+                                > span {
+                                    font-weight: 700;
+                                    font-size: 1.7rem;
+                                    margin-bottom: 10px;
+                                    display: inline-block;
+                                }
+
+                                > ul {
+                                    overflow: auto;
+                                    padding: 0;
+
+                                    li {
+                                        width: 100%;
+                                        a {
+                                            display: block;
+                                            padding: 5px 0;
+                                            font-size: 1.3rem  ;
+                                            border: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // grand menu pour solutions
+            li.big-menu{       
+                .sub-menu{
+                    width:100%;
+                    position: absolute;
+                    left: 0;
+                    display: table;
+
+                    > li:first-child, > li:first-child .sub-menu li{
+                        // background-color: $white2;
+                    }
+
+                    > li:last-child, > li:last-child .sub-menu li, li:last-child .sub-menu li ul {
+                        // background-color: $white2;
+                    }
+
+                    li {
+                        .sub-menu {
+                            width: auto;
+                            position: relative;
+                            transition: 0s all!important;
+
+                            > li:last-child {
+                                
+                                ul {
+                                    transition: 0s all!important;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            li:hover  ul.sub-menu{
+                overflow: visible;
+                visibility: visible;
+                margin-top: 0;
+                opacity: 1;
+            }
+
+            .arrowVisible a::after {
+                opacity: 1!important;
+            }
+
+            // li:hover > ul.sub-menu {
+            //     margin-top: 0px;
+            // }
+
+            // li:hover > ul > li:hover > ul {
+            //     margin-top: 0;
+            // }
+            
+        }
+
+    }
+
+
+    &.fixed {
+        .header-contact {
+            margin-top: -40px;
+        }
+
+        .header-main {
+            background: #fff;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            margin: 0;
+
+            .header-logo {
+                margin-top: 2px;
+            }
+
+            nav a {
+                padding: 2px 15px;
+            }
+
+             nav li.white-border a {
+                padding: 2px 10px;
+            }
+
+            li {
+                padding-bottom: 6px;
+
+                ul li {
+                    padding: 0;
+                }
+            }
+
+            // li:hover > ul.sub-menu {
+            //     margin-top: 14px;
+                
+            //     li:hover ul {
+            //         margin-top: 0;
+            //     }
+            // }
+        }
+    }
+
+    //*****************************************
+    // DE MOBILE A IPAD
+    //*****************************************
+    @media (max-width: 1024px) {
+        #dl-menu {
+            display: block;
+        }
+        .header-contact {
+            display: none;
+        }
+
+        .header-main {
+            background: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0;
+            text-align: center;
+            height: 45px;
+
+            nav {
+                display: none;
+            }
+        }
+
+        .header-logo-mobile {
+            width: 160px;
+            position: absolute;
+            left: 50%;
+            margin-left: -80px;
+            top: 12px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header-main {
+            border-bottom: 1px solid #ddd;
+
+            .header-logo { margin-top: 0; display: none; }
+        }
+
+    }
+
+    
+    //*****************************************
+    // ENTRE IPAD ET RESOLUTION DESKTOP DE 13PO
+    //*****************************************
+    @media (min-width: 1025px) and (max-width: 1279px) {
+        #dl-menu {
+            display: none;
+        }
+        .header-main  {
+
+            .header-logo {
+                width: 140px;
+                margin-top: 11px;
+            }
+
+            nav  {
+                a{ 
+                    padding: 10px 15px;
+                    font-size: 12px;
+                }
+
+                .big-menu>ul>li>p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &.fixed {
+            .header-contact,
+            .header-main {
+                padding: 10px 20px 0px;
+            }
+
+            .header-logo { margin-top: 0; }
+
+            .header-main nav a {
+                font-size: 12px;
+            }
+        }
+    }
+    //*****************************************
+    // DESKTOP DE 13PO ET PLUS
+    //*****************************************
+    @media (min-width: 1280px) {
+        #dl-menu {
+            display: none;
+        }
+        .header-main  {
+
+            .header-logo {
+                width: 140px;
+                margin-top: 11px;
+            }
+
+            nav  {
+                a{ 
+                    padding: 10px 20px;
+                    font-size: 14px;
+                }
+
+                .big-menu>ul>li>p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &.fixed {
+            .header-contact,
+            .header-main {
+                padding: 10px 20px 0px;
+            }
+
+            .header-logo { margin-top: 0; }
+
+            .header-main nav a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// MENU PAGE THANK YOU
+.thank-you,
+.message-sent {
+    .header .header-main nav li.white-border:last-child {display: none;}
+}

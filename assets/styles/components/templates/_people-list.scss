@@ -1,0 +1,136 @@
+.people-list {
+	padding-bottom: 0;
+	position: relative;
+
+	h2 {
+		text-align: center;
+	}
+
+	.nav-tabs {
+		border: 0;
+		li {
+			// width: calc(100% / 6);
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-bottom: 30px;
+			height: 180px;
+
+			.circle {
+				width: 90px;
+				height: 90px;
+				display: block;
+				margin: 0 auto 10px;
+				border-radius: 90px;
+				border: 3px solid #fff;
+				overflow: hidden;
+
+				transition: border 0.4s ease-in-out;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			a {
+				border: 0;
+				margin-right: 0;
+			}
+
+			a:hover {
+				outline: 0;
+				border: 0;
+				background: transparent;
+
+				.circle {
+					border: 3px solid #2a307f;
+				}
+			}
+
+			p {
+				text-align: center;
+				color: $black;
+				font-weight: bold;
+				font-size: 1.6rem;
+			}
+
+			&:after {
+				content: ' ';
+				// background-color: $blue;
+				// width: 30px;
+				// height: 30px;
+				display: block;
+			}
+		}
+
+
+		li.active {
+
+			a {
+				border: 0;
+			}
+
+			.circle {
+				border: 3px solid #2a307f;
+			}
+
+			&:after {
+				content: ' ';
+				// background-color: $blue;
+				// width: 30px;
+				// height: 30px;
+				display: block;
+
+				width: 0; 
+				height: 0; 
+				border-left: 16px solid transparent;  /* left arrow slant */
+				border-right: 16px solid transparent; /* right arrow slant */
+				border-bottom: 30px solid #2a307f; /* bottom, add background color here */
+				font-size: 0;
+				line-height: 0;
+				position: absolute;
+			    left: 50%;
+			    bottom: -30px;
+			    margin-left: -16px;
+			}
+		}
+	}
+
+	.tab-pane {
+		background-color: #2a307f;
+		padding: 40px 0;
+		color: #fff;
+		border: 0;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.nav-tabs {
+			li {
+				height: auto;
+			}
+			li.active {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.nav-tabs {
+			li.active {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+	}
+
+}

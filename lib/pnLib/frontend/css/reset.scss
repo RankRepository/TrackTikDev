@@ -1,0 +1,30 @@
+
+// Resets
+a {
+    text-decoration: none;
+
+    &:focus { outline: none; }
+}
+input {
+    outline: none;
+}
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder { color:#000; }
+::-moz-placeholder { color:#000; } /* firefox 19+ */
+:-ms-input-placeholder { color:#000; } /* ie */
+input:-moz-placeholder { color:#000; }

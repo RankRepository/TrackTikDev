@@ -1,0 +1,63 @@
+////////////////// HOME V2 - BOX IMG TXT \\\\\\\\\\\\\\\\\\
+.box-img-txt-home {
+    color: $white;
+    padding-top: 0;
+
+    .box {
+        text-align: center;
+    }
+
+    .box-img {
+        margin-top: -5%;
+
+        img {
+            display: inline-block;
+        }
+    }
+    
+    .box-text {
+        margin-top: -60px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 2.6rem;
+    }
+    
+    p, ul, ol, .btn {
+        margin-bottom: 50px;
+    }
+
+    ul, ol {
+        text-align: left;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .btn {
+        border-color: $white;
+
+        &:hover {
+            background-color: $red !important;
+            border-color: $red !important;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .box-img img {
+            width: 80%;
+            height: auto;
+        }
+
+        .box-text {
+            margin-top: 0;
+        }
+
+        h2 {font-size: 2.2rem;}
+        p {font-size: 1.6rem;}
+    }
+}

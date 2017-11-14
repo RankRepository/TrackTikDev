@@ -1,0 +1,75 @@
+////////////////// BOX IMG TXT \\\\\\\\\\\\\\\\\\
+.simple-list {
+    display: table;
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-list {
+        text-align: left;
+        list-style-type: none;
+        padding: 0;
+        margin: 30px 0 40px;
+        
+        li {
+            // font-size: 2rem;
+            font-weight: 300;
+            margin: 15px 0;
+            padding: 0 10px 0 35px;
+            background-size: 22px;
+            background-position: 0 2px;
+            background-repeat: no-repeat;
+        }
+
+        &.black {
+            li {
+                color: $black!important;
+                opacity: 0.9;
+                background-image: url('../images/ui/arrow-simple-list-black.svg');
+            }
+        }
+
+        &.white {
+            li {
+                color: white!important;
+                opacity: 0.9;
+                background-image: url('../images/ui/arrow-simple-list-white.svg');
+            }
+        }
+    }
+
+    .btn {
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        .item-list {
+            margin: 30px 15px 0px;
+
+            li {
+                // font-size: 1.6rem;
+                background-size: 16px;
+                background-position: 8px 2px;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        .item-list li {
+            // font-size: 1.8rem;
+        }
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+    }
+
+    @media (min-width: $screen-lg-min) {
+
+    }
+}

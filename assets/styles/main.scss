@@ -1,0 +1,67 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+@import "components/icomoon";
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "components/owl-carousel";
+@import "components/menu-mobile";
+@import "components/animate";
+@import "components/olark";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+
+// templates
+
+@import "components/templates/tabbed";
+@import "components/templates/box-img-txt";
+@import "components/templates/icons-list";
+@import "components/templates/animated-screen";
+@import "components/templates/animated-device";
+@import "components/templates/one-col-txt";
+@import "components/templates/two-col-txt";
+@import "components/templates/simple-list";
+@import "components/templates/partners";
+@import "components/templates/icons-description";
+@import "components/templates/people-list";
+@import "components/templates/three-col-icon";
+@import "components/templates/three-col-icon-text";
+@import "components/templates/three-col-colorBox";
+@import "components/templates/three-col-stats";
+@import "components/templates/videos";
+@import "components/templates/news";
+@import "components/templates/one-col-graphic";
+@import "components/templates/page-contact-form-info";
+@import "components/templates/page-product-info";
+@import "components/templates/page-job";
+@import "components/templates/pdf-list";
+@import "components/templates/header-slider";
+@import "components/templates/v2-3box-icon-txt-btn";
+@import "components/templates/v2-4col-icons-list";
+@import "components/templates/v2-big-img-offset";
+@import "components/templates/v2-2vertical-boxes";
+@import "components/templates/v2-chart-text";
+
+@import "components/templates/v3-jobs-list";
+@import "components/templates/v3-jobs-text-popup";
+@import "components/templates/v3-slider-3d";
+@import "components/templates/v3-text-img-subdiv";
+
+@import "components/templates/template-ressources";
+@import "components/templates/blog";
+@import "components/templates/collapsible-content";
+@import "components/templates/testimonials";
+@import "components/templates/template-content-text";

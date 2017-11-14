@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="http://www2.tracktik.com" >
+		<meta charset="utf-8"/>
+		<meta name="description" content="%%description%%"/>
+		<title>%%title%%</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<style type="text/css">
+	* {
+		box-sizing:border-box;
+        font-family: 'Open Sans', sans-serif;
+		
+	}
+    body{
+        background-color:#f6f6f6;
+        text-align:center;
+    }
+	iframe.pardotform {
+		margin: 0;
+	}
+
+	form {
+		width: 80%;
+		min-width: 280px;
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		top: -15px;
+		padding: 15px;
+		padding-top: 0;
+		box-sizing: border-box;
+	}
+
+	label,input {
+		display: block;
+		font-size: 16px;
+	}
+
+	label {
+		font-weight: bold;
+		margin-bottom: 0px;
+		font-size:14px;
+	}
+
+	input {
+		width: 100%!important;
+		padding: 5px;
+	}
+
+	input:active, input:hover, input:focus {
+		outline: 0;
+	}
+
+	input[type=submit]{
+		appearance: none;
+		-webkit-appearance: none;
+		background-color: #dd9933;
+		border: 3px solid #fff;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 10px;
+		-webkit-transition: all .6s ease-in-out;
+		-moz-transition: all .6s ease-in-out;
+		-o-transition: all .6s ease-in-out;
+		transition: all .6s ease-in-out;
+	}
+
+	input[type=submit]:hover {
+		background-color: #bd7e20;
+		cursor: pointer;
+	}
+
+	textarea {
+		resize: none;
+	}
+	h2{
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #444;	    
+	}
+    p{
+        line-height: 150%;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #222;        
+    }	
+    .form-field{
+        text-align:left;
+    }
+    strong{
+        font-weight:bold;
+    }
+    p.error{
+    color: #f54343;
+    margin-top: -12px;
+            
+    }
+
+    textarea{
+    width: 100%;
+    height: 65px;
+    border: 1px solid #cccccc;        
+    }
+</style>
+	</head>
+	<body>
+		%%content%%
+	</body>
+</html>

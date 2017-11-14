@@ -1,0 +1,163 @@
+.btn {
+	display: inline-block;
+	border: 2px solid transparent;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0;
+	//background-color: $red;
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin: 5px 0;
+	position: relative;
+	padding: 10px 45px;
+	overflow: hidden;
+	outline: none;
+	transition: background-color 0.4s ease;
+	text-transform: uppercase;
+	white-space: normal;
+
+	img {
+		height: 20px;
+		width: 20px;
+		margin-right: 15px;
+	}
+}
+
+// .btn:before {
+// 	content: '';
+// 	display: block;
+// 	height: 0;
+// 	width: 0;
+// 	border-bottom: 3px solid rgba(0,0,0,0);
+// 	border-left: 3px solid rgba(0,0,0,0);
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: 0;
+// 	transition: 0.6s ease;
+// }
+// .btn:after {
+// 	content: '';
+// 	display: block;
+// 	height: 0;
+// 	width: 0;
+// 	border-top: 3px solid rgba(0,0,0,0);
+// 	border-right: 3px solid rgba(0,0,0,0);
+// 	position: absolute;
+// 	right: 0;
+// 	top: 0;
+// 	transition: 0.6s ease;
+// }
+
+// .btn:hover {
+// 	background-color: darken($red, 15%);
+// 	color: #fff;
+
+// 	&:before {
+// 		border-bottom: 3px solid rgba(0,0,0,0.4);
+// 		border-left: 3px solid rgba(0,0,0,0.4);
+// 	}
+
+// 	&:after {
+// 		border-top: 3px solid rgba(0,0,0,0.4);
+// 		border-right: 3px solid rgba(0,0,0,0.4);
+// 	}
+// }
+
+// .btn:hover:before,
+// .btn:hover:after {
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+//white btn 
+// .btn.white {
+// 	color: $black;
+// 	background-color: #fff;
+// }
+// .btn.white:before {
+// 	border-bottom: 3px solid #fff;
+// 	border-left: 3px solid #fff;
+// }
+// .btn.white:after {
+// 	border-top: 3px solid #fff;
+// 	border-right: 3px solid #fff;
+// }
+
+// .btn.white:hover {
+// 	background-color: darken(#fff, 15%);
+// 	color: $black;
+
+// 	&:before {
+// 		border-bottom: 3px solid rgba(0,0,0,0.4);
+// 		border-left: 3px solid rgba(0,0,0,0.4);
+// 	}
+
+// 	&:after {
+// 		border-top: 3px solid rgba(0,0,0,0.4);
+// 		border-right: 3px solid rgba(0,0,0,0.4);
+// 	}
+// }
+
+//blue btn 
+// .btn.blue {
+// 	color: #fff;
+// 	background-color: $blue;
+// }
+// .btn.blue:before {
+// 	border-bottom: 3px solid $blue;
+// 	border-left: 3px solid $blue;
+// }
+// .btn.blue:after {
+// 	border-top: 3px solid $blue;
+// 	border-right: 3px solid $blue;
+// }
+
+// .btn.blue:hover {
+// 	background-color: darken($blue, 15%);
+// 	color: #fff;
+
+// 	&:before {
+// 		border-bottom: 3px solid rgba(0,0,0,0.4);
+// 		border-left: 3px solid rgba(0,0,0,0.4);
+// 	}
+
+// 	&:after {
+// 		border-top: 3px solid rgba(0,0,0,0.4);
+// 		border-right: 3px solid rgba(0,0,0,0.4);
+// 	}
+// }
+
+//purple btn 
+// .btn.purple {
+// 	color: #fff;
+// 	background-color: $purple;
+// }
+// .btn.purple:before {
+// 	border-bottom: 3px solid $purple;
+// 	border-left: 3px solid $purple;
+// }
+// .btn.purple:after {
+// 	border-top: 3px solid $purple;
+// 	border-right: 3px solid $purple;
+// }
+
+// .btn.purple:hover {
+// 	background-color: darken($purple, 15%);
+// 	color: #fff;
+
+// 	&:before {
+// 		border-bottom: 3px solid rgba(0,0,0,0.4);
+// 		border-left: 3px solid rgba(0,0,0,0.4);
+// 	}
+
+// 	&:after {
+// 		border-top: 3px solid rgba(0,0,0,0.4);
+// 		border-right: 3px solid rgba(0,0,0,0.4);
+// 	}
+// }
+
+@media (max-width: $screen-xs-max) {
+	.btn {
+		padding: 10px 15px;
+	}
+}

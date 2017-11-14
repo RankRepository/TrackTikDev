@@ -1,0 +1,38 @@
+.product-info {
+
+	.line {
+		width: 100%;
+		display: block;
+		clear: both;
+		height: 1px;
+		background: #ddd;
+	}
+	
+	.art-thumbnail.small {
+		padding-top: 60px;
+	}
+
+	.art-thumbnail.small .btn {
+		color: $red;
+	    background-color: #fff;
+	    border-color: $red;
+
+	    &:hover {
+	    	color: #fff;
+    		background-color: $red;
+	    }
+	}
+
+	.list-small-thumbnail {
+	    border-bottom: 1px solid $ocean;
+	}
+
+    // resolution XS a SM
+	@media (max-width: $screen-sm-max) {
+		.line{
+			display: none;
+		}
+	}
+	
+	
+}

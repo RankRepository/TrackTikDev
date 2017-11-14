@@ -1,0 +1,128 @@
+///////////// 1col txt \\\\\\\\\\\\\\\
+.one-col-graphic {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+
+	h2 {
+		margin-bottom: 30px;
+	}
+	
+	p, ul, ol, .btn {
+		margin-bottom: 50px;
+		font-size: 16px;
+	}
+
+	.gridTable {
+		display: table;
+		margin-bottom: 50px;
+		
+		img {
+			width: 100%;
+		}
+
+		p {
+			margin-bottom: 0;
+		}		
+
+		.col-sm-4 {
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+		}
+	}
+
+	.col-image {
+		position: relative;
+
+		.txt {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			right: 15px;
+			transform: translate(0, -50%);
+			opacity: 0;
+			transition: opacity 1s;
+
+			&.active {
+				opacity: 1;
+			}
+
+			p {
+				display: inline-block;
+				vertical-align: middle;
+				color: $white;
+				text-align: center;
+
+				&.txt-left,
+				&.txt-right {
+					font-size: 1.3rem;
+    				width: 24%;
+				}
+
+				&.title {
+					font-size: 2.2rem;
+					font-weight: 500;
+					width: 48%;
+				}
+			}
+		}
+
+		@media (max-width: $screen-md-max) {
+			.txt {
+				p.title {font-size: 1.8rem;}
+				p.txt-left,
+				p.txt-right {font-size: 1rem;}
+			}
+		}
+
+		@media (max-width: $screen-sm-max) {
+			.txt {
+				p.title {font-size: 1.4rem;}
+				p.txt-left,
+				p.txt-right {font-size: 0.8rem;}
+			}
+		}
+
+		@media (max-width: $screen-sm-max) {
+			width: 290px;
+	    	margin: 0 auto;
+		}
+	}
+
+	.img-animated {
+		transition: all 0.5s;
+		opacity: 0;
+	}
+
+	.anim-rotation {
+		animation: anim-rotation 1s;
+		opacity: 1;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.gridTable {
+			display: block;
+			margin-bottom: 30px;
+
+			img {
+				max-width: 290px;
+				margin: 30px auto;
+				display: block;
+			}
+
+			.col-sm-4 {
+				display: block;
+				float: none;
+
+			}
+		}
+	}
+}
+
+@-webkit-keyframes anim-rotation {
+  0%   { transform: rotate(-70deg); }
+  100% { opacity: rotate(0deg); }
+}

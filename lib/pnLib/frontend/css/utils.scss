@@ -1,0 +1,64 @@
+
+// Full height
+.fit-screen {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+        background-attachment: scroll!important;
+        background-position: 50% 0!important;
+        background-size: cover!important;
+    }
+}
+
+// Center
+.outerCenter {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middleCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.innerCenter {
+    width: 90%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.innerCenter.text-left {
+    text-align: left;
+}
+
+// Vertical centering classes
+.va,
+.vac {
+    display: inline-block;
+    vertical-align: middle;
+}
+.va {
+    height: 100%;
+    width: 0;
+}
+
+// Text hidding (practical for Document Outline)
+.aria-hidden {
+    border: none !important;
+    clip: rect(0 0 0 0);
+    font-size: 0 !important;
+    height: 1px;
+    line-height: 0 !important;
+    margin: -1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px;
+}

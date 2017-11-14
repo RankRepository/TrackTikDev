@@ -1,0 +1,234 @@
+////////////////// TAB /////////////////
+.tabbed {
+	padding: 0;
+	position: relative;
+	border-bottom: 2px solid #e9e9e9;
+
+	.nav-tabs {
+		li {
+			width: calc(100% / 3);
+
+			a {
+				img {
+					opacity: .2;
+					width: 80px;
+					height: 80px;
+					display: block;
+					margin: 0 0 0 auto;
+
+					transition: 0.4s opacity ease-in-out;
+				}
+
+				img.hover-state {
+					opacity: 0;
+					position: absolute;
+				    top: 0;
+				    right: 15px;
+				}
+
+				span {
+					color: $black;
+				}
+			}
+
+			span {
+				//padding-top: 10px;
+			    display: inline-block;
+			    font-size: 2rem;
+			}
+		}
+	}
+
+	// surcharge bootstrap
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+		color: $black;
+		background-color: #e9e9e9;
+		border: 0;
+		border-bottom: 3px solid $red;
+
+		img {
+			opacity: 0;
+		}
+
+		img.hover-state {
+			opacity: 1;
+		}
+	}
+
+	.nav-tabs>li>a:hover {
+		border-bottom: 3px solid $red;
+
+		img.hover-state {
+			opacity: 1;
+		}
+	}
+
+	.nav-tabs>li>a {
+		margin-right: 0;
+		border: 0;
+		border-radius: 0;
+		border-right: 1px solid #dbdbdb;
+		border-bottom: 3px solid #f4f4f4;
+		background-color: #f4f4f4;
+		padding: 25px 15px;
+		transition: 0.4s border-bottom ease-in-out;
+		outline: none;
+	}
+
+	.tab-pane {
+		padding: 90px 0;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+		
+		p,ul {
+			margin-bottom: 50px;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+
+			li {
+				font-size: 2rem;
+				margin-bottom: 25px;
+				font-weight: 600;
+				// line-height: 30px;
+				position: relative;
+				overflow: visible;
+				opacity: 1;
+				//transition: opacity 0.4s ease-in-out;
+
+				a {
+					color: $black;
+					transition: all 0.2s ease-in-out;
+					padding-left: 40px;
+					display: block;
+				}
+
+				img {
+					height: 30px;
+					width: 30px;
+					margin-right: 10px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					transition: all 0.2s ease-in-out;
+				}
+
+				&:hover {
+					//opacity: 0.6;
+					a {
+						letter-spacing: 0.05em;
+						margin-left: 10px;
+					}
+				}
+
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.nav-tabs {
+			li {
+				width: 100%;
+				text-align: left;
+
+				a {
+					img {
+						opacity: .2;
+						width: 70px;
+						height: 70px;
+						display: block;
+						margin: 0 auto;
+
+						transition: 0.4s opacity ease-in-out;
+					}
+
+					img.hover-state {
+						opacity: 0;
+					    position: absolute;
+					    top: 0;
+					    right: 50%;
+					    margin-right: -35px;
+					}
+				}
+			}
+		}
+
+		.tab-pane {
+			padding: 40px 0;
+
+			h2 {
+				margin-bottom: 20px;
+			}
+
+			p {
+				margin-bottom: 30px;
+			}
+
+			a {
+				margin-bottom: 10px;
+			}
+
+			ul {
+				padding: 0;
+
+				li {
+					font-size: 2rem;
+					margin-bottom: 25px;
+					font-weight: 600;
+					line-height: 30px;
+					overflow: auto;
+					text-align: left;
+
+					img {
+						height: 30px;
+						width: 30px;
+						margin-right: 10px;
+						float: left;
+					}
+				}
+			}
+
+			.right-bloc {
+				padding-top: 30px;
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.nav-tabs {
+			li span {
+				font-size: 1.6rem;
+			}
+
+			li a img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.tab-pane {
+			ul li {
+				font-size: 1.6rem;
+			}
+		}
+
+	}
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		
+	}
+
+	@media (min-width: $screen-lg-min) {
+		.nav-tabs {
+			li {
+				span {
+					padding-top: 10px;
+				}
+			}
+		}
+	}
+}
