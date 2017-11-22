@@ -44,7 +44,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/mstile-310x310.png" />
     <meta property="og:logo" content="<?php echo get_template_directory_uri(); ?>/dist/images/og_logo.png" size="200x28" />
 
-    <!-- <style>.async-hide { opacity: 0 !important} </style> -->
+    <style type="text/css">
+    .async-hide { opacity: 0 !important} 
+    .smart-page-loader { display: none !important;}
+    </style>
     <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
     h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
